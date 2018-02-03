@@ -6,17 +6,36 @@
     android:layout_height="match_parent"
     tools:context="com.example.student.myapplication.MainActivity"
     android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="15dp"
+        android:id="@+id/text1"
+        />
 <EditText
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/login"
-    android:text="Login"/>
+    android:layout_below="@id/text1"
+    android:hint="Login"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textSize="15dp"
+        android:id="@+id/text2"
+        android:layout_below="@id/login"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/password"
-        android:layout_below="@id/login"
+        android:layout_below="@id/text2"
+        android:inputType="textPassword"
         android:text="Password"
+
+
         />
     <Button
         android:layout_width="match_parent"

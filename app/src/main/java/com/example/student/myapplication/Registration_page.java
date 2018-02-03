@@ -23,6 +23,7 @@ public class Registration_page extends AppCompatActivity{
     @Override
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.registration_page);
         insert_login=findViewById(R.id.insert_login);
         insert_password=findViewById(R.id.insert_password);
         register=findViewById(R.id.register);
@@ -31,6 +32,10 @@ public class Registration_page extends AppCompatActivity{
             public void onClick(View view) {
                 SharedPreferences sharedPreferences=getSharedPreferences("login", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor=sharedPreferences.edit();
+                editor.putString(insert_login.getText().toString(),insert_password.getText().toString());
+                editor.commit();
+                finish();
+
                           }
         });
 

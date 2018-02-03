@@ -9,12 +9,16 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/insert_login"
+        android:hint="Login"
         />
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/insert_password"
+        android:hint="Password"
         />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
